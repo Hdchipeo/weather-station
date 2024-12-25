@@ -1,0 +1,258 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+cl�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 21:28:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=239f4h (145908) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00033a1c vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=00033a2c vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d70 vaddr=40080000 size=082a8h ( 33448) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=896c4h (562884) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c96ec vaddr=400882a8 size=10ef8h ( 69368) load[0m
+[0;32mI (403) esp_image: segment 6: paddr=000da5ec vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da658 vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 21:27:57[0m
+[0;32mI (461) app_init: ELF file SHA256:  21ff309dc...[0m
+[0;32mI (467) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (477) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (482) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;32mI (535) main_task: Started on CPU0[0m
+[0;32mI (545) main_task: Calling app_main()[0m
+[0;32mI (545) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (555) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (555) gpio: GPIO[14]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (565) Temperature-sensor: Device iterator created, start searching...[0m
+[0;33mW (575) 1-wire.device: reset bus failed: no devices found[0m
+[0;32mI (575) Temperature-sensor: Searching done[0m
+[0;32mI (585) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (595) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (605) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (605) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (615) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (625) BATTERY_STATION: Calibration Success[0m
+[0;32mI (625) SERVO: Create timer and operator[0m
+[0;32mI (635) SERVO: Connect timer and operator[0m
+[0;32mI (635) SERVO: Create comparator and generator from the operator[0m
+[0;32mI (645) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (655) SERVO: Set generator action on timer and compare event[0m
+[0;32mI (655) SERVO: Enable and start timer[0m
+[0;32mI (665) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (675) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (705) wifi:wifi driver task: 3ffc0a44, prio:23, stack:6656, core=0
+I (705) wifi:wifi firmware version: ccaebfa
+I (705) wifi:wifi certification version: v7.0
+I (705) wifi:config NVS flash: enabled
+I (705) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (715) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (725) wifi:Init dynamic tx buffer num: 32
+I (725) wifi:Init static rx buffer size: 1600
+I (735) wifi:Init static rx buffer num: 10
+I (735) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (745) wifi_init: accept mbox: 6[0m
+[0;32mI (745) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (765) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (775) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (855) wifi:mode : sta (14:2b:2f:d9:f5:9c)
+I (865) wifi:enable tsf
+I (865) wifi:ifx:0, phymode(new:0x3, nvs:0x3)
+I (865) wifi:enable tsf
+Wake interval set to 100 ms
+I (865) wifi:Set ps type: 1, coexist: 0
+
+Power save mode enabled
+I (875) ESPNOW: espnow [version: 1.0] init
+Wake window set to 1000 us
+[0;31mE (875) ds18b20: ds18b20_trigger_temperature_conversion(105): invalid argument[0m
+[0;31mE (885) ds18b20: ds18b20_get_temperature(121): invalid argument[0m
+[0;32mI (895) WEATHER-STATION: Temperature = 0.0°C[0m
+[0;32mI (895) WEATHER-STATION: Rain state = 0[0m
+[0;32mI (905) WEATHER-STATION: Rain traffic = 2734 mV[0m
+[0;32mI (905) WEATHER-STATION: Battery capacity = 100.0%[0m
+[0;32mI (915) WEATHER-STATION: Servo angle = 90[0m
+[0;32mI (915) WEATHER-STATION: Send done[0m
+[0;32mI (925) main_task: Returned from app_main()[0m
+[0;32mI (1035) LDR:  Ldr1 value = 128[0m
+[0;32mI (1035) LDR:  Ldr2 value = 128[0m
+I (1045) ESPNOW: espnow [version: 1.0] deinit
+E (1045) wifi:NAN WiFi stop
+I (1045) wifi:flush txq
+I (1045) wifi:stop sw txq
+I (1045) wifi:lmac stop hw txq
+ets Jul 29 2019 12:21:46
+
+rst:0x5 (DEEPSLEEP_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 21:28:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=239f4h (145908) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=00033a1c vaddr=3ff80063 size=00008h (     8) [0m
+[0;32mI (155) esp_image: segment 2: paddr=00033a2c vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d70 vaddr=40080000 size=082a8h ( 33448) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=896c4h (562884) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c96ec vaddr=400882a8 size=10ef8h ( 69368) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da5ec vaddr=400c0000 size=00064h (   100) [0m
+[0;32mI (403) esp_image: segment 7: paddr=000da658 vaddr=50000000 size=00004h (     4) [0m
+[0;32mI (420) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (420) boot: Disabling RNG early entropy source...[0m
+[0;32mI (433) cpu_start: Multicore app[0m
+[0;32mI (441) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (450) app_init: App version:      1[0m
+[0;32mI (454) app_init: Compile time:     Dec 22 2024 21:27:57[0m
+[0;32mI (460) app_init: ELF file SHA256:  21ff309dc...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (471) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (486) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (493) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;32mI (534) main_task: Started on CPU0[0m
+[0;32mI (544) main_task: Calling app_main()[0m
+[0;32mI (544) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (554) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (554) gpio: GPIO[14]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (564) Temperature-sensor: Device iterator created, start searching...[0m
+[0;33mW (574) 1-wire.device: reset bus failed: no devices found[0m
+[0;32mI (574) Temperature-sensor: Searching done[0m
+[0;32mI (584) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (594) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (604) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (604) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (614) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (624) BATTERY_STATION: Calibration Success[0m
+[0;32mI (624) SERVO: Create timer and operator[0m
+[0;32mI (634) SERVO: Connect timer and operator[0m
+[0;32mI (634) SERVO: Create comparator and generator from the operator[0m
+[0;32mI (644) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (654) SERVO: Set generator action on timer and compare event[0m
+[0;32mI (654) SERVO: Enable and start timer[0m
+[0;32mI (664) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (674) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (704) wifi:wifi driver task: 3ffc0a44, prio:23, stack:6656, core=0
+I (704) wifi:wifi firmware version: ccaebfa
+I (704) wifi:wifi certification version: v7.0
+I (704) wifi:config NVS flash: enabled
+I (704) wifi:config nano formating: disabled
+I (714) wifi:Init data frame dynamic rx buffer num: 32
+I (714) wifi:Init static rx mgmt buffer num: 5
+I (724) wifi:Init management short buffer num: 32
+I (724) wifi:Init dynamic tx buffer num: 32
+I (724) wifi:Init static rx buffer size: 1600
+I (734) wifi:Init static rx buffer num: 10
+I (734) wifi:Init dynamic rx buffer num: 32
+[0;32mI (744) wifi_init: rx ba win: 6[0m
+[0;32mI (744) wifi_init: accept mbox: 6[0m
+[0;32mI (744) wifi_init: tcpip mbox: 32[0m
+[0;32mI (754) wifi_init: udp mbox: 6[0m
+[0;32mI (754) wifi_init: tcp mbox: 6[0m
+[0;32mI (754) wifi_init: tcp tx win: 5760[0m
+[0;32mI (764) wifi_init: tcp rx win: 5760[0m
+[0;32mI (764) wifi_init: tcp mss: 1440[0m
+[0;32mI (774) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (774) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (784) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+I (804) wifi:mode : sta (14:2b:2f:d9:f5:9c)
+I (804) wifi:enable tsf
+I (804) wifi:ifx:0, phymode(new:0x3, nvs:0x3)
+I (804) wifi:enable tsf
+Wake interval set to 100 ms
+I (804) wifi:Set ps type: 1, coexist: 0
+
+Power save mode enabled
+I (814) ESPNOW: espnow [version: 1.0] init
+Wake window set to 1000 us
+[0;31mE (814) ds18b20: ds18b20_trigger_temperature_conversion(105): invalid argument[0m
+[0;31mE (824) ds18b20: ds18b20_get_temperature(121): invalid argument[0m
+[0;32mI (834) WEATHER-STATION: Temperature = 0.0°C[0m
+[0;32mI (834) WEATHER-STATION: Rain state = 0[0m
+[0;32mI (844) WEATHER-STATION: Rain traffic = 2734 mV[0m
+[0;32mI (844) WEATHER-STATION: Battery capacity = 100.0%[0m
+[0;32mI (854) WEATHER-STATION: Servo angle = 90[0m
+[0;32mI (854) WEATHER-STATION: Send done[0m
+[0;32mI (864) main_task: Returned from app_main()[0m
+[0;32mI (974) LDR:  Ldr1 value = 128[0m
+[0;32mI (974) LDR:  Ldr2 value = 128[0m
+I (984) ESPNOW: espnow [version: 1.0] deinit
+E (984) wifi:NAN WiFi stop
+I (984) wifi:flush txq
+I (984) wifi:stop sw txq
+I (984) wifi:lmac stop hw txq

@@ -1,0 +1,90 @@
+[1/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ldr.c.obj
+[2/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wearther-station.c.obj
+[3/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32\wearther-station\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32/wearther-station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/rain_sensor.c.obj
+D:/ESP32/wearther-station/main/rain_sensor.c: In function 'rain_sensor_init':
+D:/ESP32/wearther-station/main/rain_sensor.c:41:10: warning: unused variable 'do_calibration1_chan1' [-Wunused-variable]
+   41 |     bool do_calibration1_chan1 = example_adc_calibration_init(ADC_UNIT_1, EXAMPLE_ADC1_CHAN1, EXAMPLE_ADC_ATTEN, &adc2_cali_chan2_handle);
+      |          ^~~~~~~~~~~~~~~~~~~~~
+D:/ESP32/wearther-station/main/rain_sensor.c: At top level:
+D:/ESP32/wearther-station/main/rain_sensor.c:129:13: warning: 'example_adc_calibration_deinit' defined but not used [-Wunused-function]
+  129 | static void example_adc_calibration_deinit(adc_cali_handle_t handle)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable wearther-station.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32/wearther-station/build/wearther-station.bin
+[9/10] cmd.exe /C "cd /D D:\ESP32\wearther-station\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32/wearther-station/build/partition_table/partition-table.bin D:/ESP32/wearther-station/build/wearther-station.bin"
+wearther-station.bin binary size 0xca7b0 bytes. Smallest app partition is 0x100000 bytes. 0x35850 bytes (21%) free.
+[9/10] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_pesptool.py --chip esp32 -p COM13 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 wearther-station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM13
+Connecting..............
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:2b:2f:d9:f5:9c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000dafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16359...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16359 compressed) at 0x00001000 in 0.6 seconds (effective 332.0 kbit/s)...
+Hash of data verified.
+Compressed 829360 bytes to 519478...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001da0c... (6 %)
+Writing at 0x00025d8d... (9 %)
+Writing at 0x0002aca2... (12 %)
+Writing at 0x00034414... (15 %)
+Writing at 0x0003c4ac... (18 %)
+Writing at 0x00041f85... (21 %)
+Writing at 0x00047a0e... (25 %)
+Writing at 0x0004db1f... (28 %)
+Writing at 0x00053c2d... (31 %)
+Writing at 0x00059897... (34 %)
+Writing at 0x0005f5f1... (37 %)
+Writing at 0x00065cff... (40 %)
+Writing at 0x0006b162... (43 %)
+Writing at 0x0007040a... (46 %)
+Writing at 0x000758f1... (50 %)
+Writing at 0x0007acd8... (53 %)
+Writing at 0x000803e4... (56 %)
+Writing at 0x00085b4d... (59 %)
+Writing at 0x0008ba9a... (62 %)
+Writing at 0x00091438... (65 %)
+Writing at 0x0009705d... (68 %)
+Writing at 0x0009ccc5... (71 %)
+Writing at 0x000a25be... (75 %)
+Writing at 0x000a8312... (78 %)
+Writing at 0x000ade18... (81 %)
+Writing at 0x000b366d... (84 %)
+Writing at 0x000bd4c4... (87 %)
+Writing at 0x000c501a... (90 %)
+Writing at 0x000cadd9... (93 %)
+Writing at 0x000d1384... (96 %)
+Writing at 0x000d6851... (100 %)
+Wrote 829360 bytes (519478 compressed) at 0x00010000 in 11.7 seconds (effective 569.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 669.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+y && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-v5.3.1 -D SERIAL_TOOL=D:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP32/wearther-station/build -P D:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

@@ -1,0 +1,89 @@
+[1/54] Linking C static library esp-idf\avi_player\libavi_player.a
+[2/54] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32\wearther-station\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32/wearther-station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[3/52] Building C object esp-idf/espressif__xz/CMakeFiles/__idf_espressif__xz.dir/xz-embedded/linux/lib/xz/xz_dec_bcj.c.obj
+[4/52] Building C object esp-idf/espressif__xz/CMakeFiles/__idf_espressif__xz.dir/src/xz_decompress.c.obj
+[5/52] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/servo.c.obj
+D:/ESP32/wearther-station/main/servo.c:19:13: warning: 'config_gpio_output' defined but not used [-Wunused-function]
+   19 | static void config_gpio_output(gpio_num_t gpioNum)
+      |             ^~~~~~~~~~~~~~~~~~
+[6/52] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wearther-station.c.obj
+D:/ESP32/wearther-station/main/wearther-station.c: In function 'weather_station_task':
+D:/ESP32/wearther-station/main/wearther-station.c:58:24: warning: passing argument 1 of 'ldr_sun_detect' from incompatible pointer type [-Wincompatible-pointer-types]
+   58 |         ldr_sun_detect(&angle);
+      |                        ^~~~~~
+      |                        |
+      |                        float *
+In file included from D:/ESP32/wearther-station/main/wearther-station.c:13:
+D:/ESP32/wearther-station/main/ldr.h:23:26: note: expected 'int *' but argument is of type 'float *'
+   23 | void ldr_sun_detect(int *angle);
+      |                     ~~~~~^~~~~
+D:/ESP32/wearther-station/main/wearther-station.c: At top level:
+D:/ESP32/wearther-station/main/wearther-station.c:15:20: warning: 'TAG_STATION' defined but not used [-Wunused-variable]
+   15 | static const char *TAG_STATION = "WEATHER-STATION";
+      |                    ^~~~~~~~~~~
+[7/52] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ldr.c.obj
+D:/ESP32/wearther-station/main/ldr.c:12:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   12 | static const char *TAG = "LDR";
+      |                    ^~~
+[8/52] Building C object esp-idf/bootloader_support_plus/CMakeFiles/__idf_bootloader_support_plus.dir/src/bootloader_custom_image_format.c.obj
+[9/52] Building C object esp-idf/espressif__xz/CMakeFiles/__idf_espressif__xz.dir/xz-embedded/linux/lib/xz/xz_dec_stream.c.obj
+[10/52] Building C object esp-idf/espressif__xz/CMakeFiles/__idf_espressif__xz.dir/xz-embedded/linux/lib/xz/xz_dec_lzma2.c.obj
+[11/52] Building C object esp-idf/bootloader_support_plus/CMakeFiles/__idf_bootloader_support_plus.dir/src/bootloader_custom_ota.c.obj
+[12/52] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/8080_lcd_esp32s3.c.obj
+[13/52] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/i2s_lcd_esp32s2_driver.c.obj
+[14/52] Building C object esp-idf/bootloader_support_plus/CMakeFiles/__idf_bootloader_support_plus.dir/src/bootloader_custom_utility.c.obj
+[15/52] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button_gpio.c.obj
+[16/52] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button_matrix.c.obj
+[17/52] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button_adc.c.obj
+[18/52] Linking C static library esp-idf\espressif__xz\libespressif__xz.a
+[19/52] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/spi_bus.c.obj
+[20/52] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/i2c_bus.c.obj
+[21/52] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/iot_button.c.obj
+[22/52] Building C object esp-idf/bus/CMakeFiles/__idf_bus.dir/i2s_lcd_esp32_driver.c.obj
+In file included from D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/i2s.h:23,
+                 from D:/ESP32/esp-iot-solution/components/bus/include/i2s_lcd_driver.h:10,
+                 from D:/ESP32/esp-iot-solution/components/bus/i2s_lcd_esp32_driver.c:28:
+D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+D:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+[23/52] Building C object esp-idf/elf_loader/CMakeFiles/__idf_elf_loader.dir/src/arch/esp_elf_xtensa.c.obj
+[24/52] Building C object esp-idf/elf_loader/CMakeFiles/__idf_elf_loader.dir/src/esp_elf_adapter.c.obj
+[25/52] Building C object esp-idf/elf_loader/CMakeFiles/__idf_elf_loader.dir/src/esp_elf.c.obj
+[26/52] Building C object esp-idf/extended_vfs/CMakeFiles/__idf_extended_vfs.dir/src/ext_vfs.c.obj
+[27/52] Linking C static library esp-idf\bootloader_support_plus\libbootloader_support_plus.a
+[28/52] Building C object esp-idf/elf_loader/CMakeFiles/__idf_elf_loader.dir/src/esp_elf_symbol.c.obj
+[29/52] Linking C static library esp-idf\button\libbutton.a
+[30/52] Linking C static library esp-idf\bus\libbus.a
+[31/52] Linking C static library esp-idf\elf_loader\libelf_loader.a
+[32/52] Building C object esp-idf/keyboard_button/CMakeFiles/__idf_keyboard_button.dir/src/kbd_gpio.c.obj
+[33/52] Building C object esp-idf/keyboard_button/CMakeFiles/__idf_keyboard_button.dir/src/kbd_gptimer.c.obj
+[34/52] Building C object esp-idf/extended_vfs/CMakeFiles/__idf_extended_vfs.dir/src/ext_vfs_gpio.c.obj
+[35/52] Building C object esp-idf/extended_vfs/CMakeFiles/__idf_extended_vfs.dir/src/ext_vfs_i2c.c.obj
+[36/52] Building C object esp-idf/knob/CMakeFiles/__idf_knob.dir/iot_knob.c.obj
+[37/52] Building C object esp-idf/extended_vfs/CMakeFiles/__idf_extended_vfs.dir/src/ext_vfs_ledc.c.obj
+[38/52] Linking C static library esp-idf\knob\libknob.a
+[39/52] Building C object esp-idf/extended_vfs/CMakeFiles/__idf_extended_vfs.dir/src/ext_vfs_spi.c.obj
+[40/52] Building C object esp-idf/keyboard_button/CMakeFiles/__idf_keyboard_button.dir/keyboard_button.c.obj
+[41/52] Linking C static library esp-idf\keyboard_button\libkeyboard_button.a
+[42/52] Linking C static library esp-idf\extended_vfs\libextended_vfs.a
+[43/52] Building C object esp-idf/zero_detection/CMakeFiles/__idf_zero_detection.dir/zero_detection.c.obj
+[44/52] Linking C static library esp-idf\zero_detection\libzero_detection.a
+[45/52] Building C object esp-idf/openai/CMakeFiles/__idf_openai.dir/OpenAI.c.obj
+[46/52] Linking C static library esp-idf\openai\libopenai.a
+[47/52] Linking C static library esp-idf\main\libmain.a
+[48/52] Generating ld/sections.ld
+[49/52] Building C object CMakeFiles/wearther-station.elf.dir/project_elf_src_esp32.c.obj
+[50/52] Linking CXX executable wearther-station.elf
+[51/52] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32/wearther-station/build/wearther-station.bin
+[52/52] cmd.exe /C "cd /D D:\ESP32\wearther-station\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32/wearther-station/build/partition_table/partition-table.bin D:/ESP32/wearther-station/build/wearther-station.bin"
+wearther-station.bin binary size 0xca3d0 bytes. Smallest app partition is 0x100000 bytes. 0x35c30 bytes (21%) free.

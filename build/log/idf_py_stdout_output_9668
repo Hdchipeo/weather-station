@@ -1,0 +1,655 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+cl�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (403) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (467) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (477) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (482) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (548) main_task: Started on CPU0[0m
+[0;32mI (558) main_task: Calling app_main()[0m
+[0;32mI (558) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (568) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (578) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (698) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (698) Temperature-sensor: Searching done[0m
+[0;32mI (698) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (708) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (718) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (728) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (728) BATTERY_STATION: Calibration Success[0m
+[0;32mI (738) SERVO: Create timer and operator[0m
+[0;32mI (738) SERVO: Connect timer and operator[0m
+[0;32mI (748) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (748) gpio: GPIO can only be used as input mode[0m
+[0;31mE (758) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (697) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (697) Temperature-sensor: Searching done[0m
+[0;32mI (697) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (717) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (727) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (727) BATTERY_STATION: Calibration Success[0m
+[0;32mI (737) SERVO: Create timer and operator[0m
+[0;32mI (737) SERVO: Connect timer and operator[0m
+[0;32mI (747) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (747) gpio: GPIO can only be used as input mode[0m
+[0;31mE (757) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (697) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (697) Temperature-sensor: Searching done[0m
+[0;32mI (697) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (717) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (727) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (727) BATTERY_STATION: Calibration Success[0m
+[0;32mI (737) SERVO: Create timer and operator[0m
+[0;32mI (737) SERVO: Connect timer and operator[0m
+[0;32mI (747) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (747) gpio: GPIO can only be used as input mode[0m
+[0;31mE (757) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (697) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (697) Temperature-sensor: Searching done[0m
+[0;32mI (697) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (717) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (727) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (727) BATTERY_STATION: Calibration Success[0m
+[0;32mI (737) SERVO: Create timer and operator[0m
+[0;32mI (737) SERVO: Connect timer and operator[0m
+[0;32mI (747) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (747) gpio: GPIO can only be used as input mode[0m
+[0;31mE (757) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (697) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (697) Temperature-sensor: Searching done[0m
+[0;32mI (697) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (717) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (727) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (727) BATTERY_STATION: Calibration Success[0m
+[0;32mI (737) SERVO: Create timer and operator[0m
+[0;32mI (737) SERVO: Connect timer and operator[0m
+[0;32mI (747) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (747) gpio: GPIO can only be used as input mode[0m
+[0;31mE (757) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (697) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (697) Temperature-sensor: Searching done[0m
+[0;32mI (697) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (717) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (727) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (727) BATTERY_STATION: Calibration Success[0m
+[0;32mI (737) SERVO: Create timer and operator[0m
+[0;32mI (737) SERVO: Connect timer and operator[0m
+[0;32mI (747) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (747) gpio: GPIO can only be used as input mode[0m
+[0;31mE (757) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 22 2024 20:39:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23994h (145812) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000339bc vaddr=3ff80063 size=00008h (     8) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=000339cc vaddr=3ffb0000 size=0433ch ( 17212) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00037d10 vaddr=40080000 size=08308h ( 33544) load[0m
+[0;32mI (182) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=895a8h (562600) map[0m
+[0;32mI (375) esp_image: segment 5: paddr=000c95d0 vaddr=40088308 size=10e98h ( 69272) load[0m
+[0;32mI (402) esp_image: segment 6: paddr=000da470 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (403) esp_image: segment 7: paddr=000da4dc vaddr=50000000 size=00004h (     4) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (445) app_init: Project name:     wearther-station[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Dec 22 2024 20:39:00[0m
+[0;32mI (461) app_init: ELF file SHA256:  6749b851f...[0m
+[0;32mI (466) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (476) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (481) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (487) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (494) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFB85F0 len 00027A10 (158 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 400991A0 len 00006E60 (27 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+[0;32mI (557) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) Temperature-sensor: Device iterator created, start searching...[0m
+[0;32mI (697) Temperature-sensor: Found a Device, address: 643DE104570CB228[0m
+[0;32mI (697) Temperature-sensor: Searching done[0m
+[0;32mI (697) gpio: GPIO[16]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (707) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (717) RAIN_SENSOR: calibration scheme version is Line Fitting[0m
+[0;32mI (717) RAIN_SENSOR: Calibration Success[0m
+[0;32mI (727) BATTERY_STATION: calibration scheme version is Line Fitting[0m
+[0;32mI (727) BATTERY_STATION: Calibration Success[0m
+[0;32mI (737) SERVO: Create timer and operator[0m
+[0;32mI (737) SERVO: Connect timer and operator[0m
+[0;32mI (747) SERVO: Create comparator and generator from the operator[0m
+[0;31mE (747) gpio: GPIO can only be used as input mode[0m
+[0;31mE (757) mcpwm: mcpwm_new_generator(95): config gen GPIO failed[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x400d76b7
+file: "./main/servo.c" line 84
+func: servo_init
+expression: mcpwm_new_generator(oper, &generator_config, &generator)
+
+abort() was called at PC 0x4008b203 on core 0
+
+
+Backtrace: 0x40081ca6:0x3ffba760 0x4008b20d:0x3ffba780 0x40092f2d:0x3ffba7a0 0x4008b203:0x3ffba810 0x400d76b7:0x3ffba840 0x400d7580:0x3ffba8c0 0x4015751b:0x3ffba8f0 0x4008bd29:0x3ffba920
+
+
+
+
+ELF file SHA256: 6749b851f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176

@@ -1,0 +1,80 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32\wearther-station\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/ESP32/wearther-station/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ldr.c.obj
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable wearther-station.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP32/wearther-station/build/wearther-station.bin
+[7/8] cmd.exe /C "cd /D D:\ESP32\wearther-station\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32/wearther-station/build/partition_table/partition-table.bin D:/ESP32/wearther-station/build/wearther-station.bin"
+wearther-station.bin binary size 0xca680 bytes. Smallest app partition is 0x100000 bytes. 0x35980 bytes (21%) free.
+[7/8] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v5.3.1\components\esptool_py && D:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/Espressif/frameworks/esp-idf-esptool.py --chip esp32 -p COM13 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 wearther-station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.dev5
+Serial port COM13
+Connecting..................................
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:2b:2f:d9:f5:9c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000dafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26752 bytes to 16359...
+Writing at 0x00001000... (100 %)
+Wrote 26752 bytes (16359 compressed) at 0x00001000 in 0.6 seconds (effective 330.9 kbit/s)...
+Hash of data verified.
+Compressed 829056 bytes to 519327...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d9eb... (6 %)
+Writing at 0x00025d8d... (9 %)
+Writing at 0x0002ac76... (12 %)
+Writing at 0x000343f2... (15 %)
+Writing at 0x0003c492... (18 %)
+Writing at 0x00041f74... (21 %)
+Writing at 0x000479e4... (25 %)
+Writing at 0x0004daad... (28 %)
+Writing at 0x00053bcf... (31 %)
+Writing at 0x0005982c... (34 %)
+Writing at 0x0005f591... (37 %)
+Writing at 0x00065ca5... (40 %)
+Writing at 0x0006b0d6... (43 %)
+Writing at 0x00070394... (46 %)
+Writing at 0x00075880... (50 %)
+Writing at 0x0007ac94... (53 %)
+Writing at 0x000802fd... (56 %)
+Writing at 0x00085ae6... (59 %)
+Writing at 0x0008ba6e... (62 %)
+Writing at 0x000913af... (65 %)
+Writing at 0x00096fef... (68 %)
+Writing at 0x0009cc51... (71 %)
+Writing at 0x000a2541... (75 %)
+Writing at 0x000a829f... (78 %)
+Writing at 0x000addaf... (81 %)
+Writing at 0x000b360f... (84 %)
+Writing at 0x000bd43f... (87 %)
+Writing at 0x000c4fa7... (90 %)
+Writing at 0x000cadcd... (93 %)
+Writing at 0x000d1393... (96 %)
+Writing at 0x000d6809... (100 %)
+Wrote 829056 bytes (519327 compressed) at 0x00010000 in 11.7 seconds (effective 568.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 788.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+v5.3.1 -D SERIAL_TOOL=D:/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe;;D:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/ESP32/wearther-station/build -P D:/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py/run_serial_tool.cmake"

@@ -1,0 +1,503 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM13 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM13 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+[0m
+[0;33m0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081ca6: panic_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x4008b20d: esp_system_abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40092f2d: abort at D:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x4008b203: _esp_error_check_failed at D:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400d796f: ldr_init at D:/ESP32/wearther-station/main/ldr.c:130 (discriminator 1)
+0x400d75a1: app_main at D:/ESP32/wearther-station/main/wearther-station.c:65
+0x4015778f: main_task at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x4008bd29: vPortTaskWrapper at D:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
